@@ -1,15 +1,11 @@
 from flask import Flask
-from flask_restful import Resource, Api
+from controller import get_item, post_item,  get_all
+
 
 app = Flask(__name__)
-api = Api(app)
-
-class HelloWorld(Resource):
-    def get(self):
-        return {'hello':'Ollivanders'}
-
-api.add_resource(HelloWorld, '/')
-
+app.register_blueprint(get_item.get_item)
+app.register_blueprint(get_all.get_all_blue)
+app.register_blueprint(post_item.post_item_blue)
 
 if __name__ == '__main__':
     app.run(debug=True)

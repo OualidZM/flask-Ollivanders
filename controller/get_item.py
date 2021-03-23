@@ -1,7 +1,8 @@
-from flask_restful import Resource
+from flask import jsonify, Blueprint
 from services import items
+get_item = Blueprint('get_item', __name__)
 
-class GetItem(Resource):
-    def get(self, item):
-        getted_item = items.get_item(item)
-        return getted_item
+@get_item.route('/item/<name>')
+def get_item_func(name):
+    response = items.get_item(name)
+    return jsonify(response)
