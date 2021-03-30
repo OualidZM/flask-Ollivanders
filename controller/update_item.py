@@ -10,5 +10,8 @@ def update_itemm():
     name = data["name"]
     sell_in = data["sell_in"]
     quality = data["quality"]
-    update.update_item(name, int(sell_in), int(quality))
+    new_name = data["new_name"]
+    new_sell_in = data["new_sell_in"]
+    new_quality = data["new_quality"]
+    update.update_item(name, int(sell_in), int(quality),new_name,int(new_sell_in),int(new_quality))
     return redirect("/")
