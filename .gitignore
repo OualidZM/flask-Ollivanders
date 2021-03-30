@@ -5,3 +5,5 @@ __pycache__
 .tox
 .coverage
 coverage_html_report
+Ollivanders.sqlite
+.vscode

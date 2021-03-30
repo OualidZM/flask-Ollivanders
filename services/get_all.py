@@ -1,9 +1,9 @@
-from repository import BBDD
-
+from repository import sqlite_db as DB
 
 def get_all():
-    answer = BBDD.BBDD.inventory
+    manager = DB.item_manager()
+    list_items = list(manager.all())
     data = []
-    for array in answer:
-        data.append({"name": array[0], "sell_in": array[1], "quality": array[2]})
+    for item in list_items:
+        data.append({"name":item.name, "sell_in":item.sell_in, "quality":item.quality})
     return data
