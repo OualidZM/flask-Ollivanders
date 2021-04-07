@@ -1,4 +1,4 @@
-from repository.sqlite_db import item_manager, Database, Item
+from repository.sqlite_db import Database, Item
 
 def post_item(name, sell_in, quality):
     db = Database('Ollivanders.sqlite')
