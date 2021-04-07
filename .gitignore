@@ -6,4 +6,5 @@ __pycache__
 .coverage
 coverage_html_report
 Ollivanders.sqlite
+Ollivanders.sqlite-journal
 .vscode

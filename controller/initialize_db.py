@@ -1,6 +1,5 @@
 from flask import Blueprint, redirect
 from services import initialize_db
-from repository import sqlite_db as DB
 
 initialize_items_blue = Blueprint("initialize_items", __name__)
 
