@@ -3,7 +3,6 @@ from services import delete_item
 
 delete_item_blue = Blueprint("delete_item", __name__)
 
-
 @delete_item_blue.route("/item", methods=["DELETE"])
 def delete_item_func():
     data = request.get_json()
