@@ -9,3 +9,4 @@ Ollivanders.sqlite
 Ollivanders.sqlite-journal
 .vscode
 distutils
+coverage_annotation
