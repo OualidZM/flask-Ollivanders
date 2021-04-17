@@ -3,6 +3,7 @@ appdirs==1.4.4
 atomicwrites==1.4.0
 attrs==20.3.0
 black==19.10b0
+bandit==1.7.0
 click==7.1.2
 colorama==0.4.4
 coverage==5.5

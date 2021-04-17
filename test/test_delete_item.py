@@ -3,7 +3,7 @@ from app import app
 
 
 @pytest.mark.delete_item
-def test_add_item():
+def test_delete_item():
     test = app.test_client()
     test.post("/item", json={"name": "hola", "sell_in": 2, "quality": 3})
     result = test.delete("/item", json={"name": "hola", "sell_in": 2, "quality": 3})

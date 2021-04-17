@@ -6,6 +6,7 @@ from controller import (
     delete_item,
     initialize_db,
     update_item,
+    update_daily,
 )
 
 
@@ -16,6 +17,7 @@ app.register_blueprint(post_item.post_item_blue)
 app.register_blueprint(delete_item.delete_item_blue)
 app.register_blueprint(initialize_db.initialize_items_blue)
 app.register_blueprint(update_item.update_item_blue)
+app.register_blueprint(update_daily.update_daily_blue)
 
 if __name__ == "__main__":
     app.run(debug=True, use_debugger=False, use_reloader=False)
