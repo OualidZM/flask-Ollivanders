@@ -1,4 +1,3 @@
-from repository.category_logic import Sulfuras
 from repository.sqlite_db import Database, Item
 from repository.categories import categories
 
