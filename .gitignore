@@ -4,6 +4,7 @@ __pycache__
 .pytest_cache
 .tox
 .coverage
+.idea
 coverage_html_report
 Ollivanders.sqlite
 Ollivanders.sqlite-journal
