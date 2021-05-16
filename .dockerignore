@@ -1,0 +1,16 @@
+__pycache__
+.pytest_cache
+.tox
+.vscode
+coverage_annotation
+coverage_html_report
+distutils
+test
+venv
+.coverage
+.coveragerc
+.gitignore
+Dockerfile
+pytest.ini
+README.md
+tox.ini

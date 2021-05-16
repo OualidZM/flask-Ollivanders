@@ -1,3 +1,4 @@
+import sys
 from flask import Flask
 from controller import (
     get_item,
@@ -18,6 +19,8 @@ app.register_blueprint(delete_item.delete_item_blue)
 app.register_blueprint(initialize_db.initialize_items_blue)
 app.register_blueprint(update_item.update_item_blue)
 app.register_blueprint(update_daily.update_daily_blue)
-
-if __name__ == "__main__":
+try:
+    if __name__ == "__main__" and sys.argv[1] == "production":
+        app.run(debug=True, use_debugger=False, use_reloader=False, host="0.0.0.0")
+except IndexError:
     app.run(debug=True, use_debugger=False, use_reloader=False)
